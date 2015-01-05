@@ -1,0 +1,22 @@
+heat_template_version: 2013-05-23
+
+description: >
+  HOT template to test OS::Heat::APIC
+
+resources:
+  LTM:
+    type: OS::Heat::BigIP
+    properties:
+      Hostname: 192.168.2.107
+      User: admin
+      Password: admin
+      vs_name: vs1
+      vs_address:  7.7.1.201
+      vs_port:  any
+      pool_name: vs-pool1
+      pool_member: 192.168.5.21
+
+
+
+
+

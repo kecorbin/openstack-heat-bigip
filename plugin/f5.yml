@@ -1,0 +1,15 @@
+heat_template_version: 2013-05-23
+
+
+resources:
+
+  lb:
+    type: OS::Heat::BigIP
+    properties:
+      vs_port:  any
+      pool_member: 1.1.1.1
+
+outputs:
+  Name:
+    description: Object Name
+    value: { get_attr: [ lb , foo ] }
