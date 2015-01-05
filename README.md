@@ -17,7 +17,7 @@ Required
 
 Clone the repository
 
-     git clone https://github.com/kecorbin/openstack-heat-plugin
+     git clone https://github.com/kecorbin/openstack-heat-bigip.git 
 
 Copy the plugin into heat plugin_dirs (/etc/heat/heat.conf)
     
